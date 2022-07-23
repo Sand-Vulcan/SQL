@@ -28,8 +28,15 @@ SELECT title FROM songs;
 
 /*OR*/
 
-SELECT title FROM songs WHERE released >1990 OR mood='epic';
+SELECT title 
+FROM songs 
+WHERE released >1990 
+OR mood='epic';
 
 /*AND*/
 
-SELECT title FROM songs WHERE released >1990 AND mood='epic' AND duration <240;
+SELECT title 
+FROM songs 
+WHERE released >1990 
+AND mood='epic' 
+AND duration <240;
