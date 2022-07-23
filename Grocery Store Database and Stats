@@ -28,12 +28,12 @@ SELECT * FROM store
 ORDER BY price desc; 
 
 --what is the avg price of items in the bulk section? 
-SELECT AVG(price) "avg bulk item price"
+SELECT AVG(price)
 FROM store
-where section='bulk'; 
+WHERE section='bulk'; 
 
 --what are the most 5 popular items? 
 SELECT item, price, popularity
 FROM store
-order by popularity desc
+ODER BY popularity DESC
 limit 5; 
