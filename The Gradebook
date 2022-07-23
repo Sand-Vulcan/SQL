@@ -34,7 +34,6 @@ INSERT INTO student_grades (name, number_grade, fraction_completed)
         WHEN number_grade>70 THEN "C"
         ELSE "F"
     END as letter_grade FROM student_grades
-   GROUP BY "letter_grade"
-    ;
+   GROUP BY "letter_grade";
     
     
