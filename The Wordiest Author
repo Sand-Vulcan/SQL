@@ -37,12 +37,12 @@ INSERT INTO books (author, title, words)
 INSERT INTO books (author, title, words)
     VALUES ("J.R.R. Tolkien", "Return of the King", 134462);
     
-SELECT author, SUM(words) as total_words
+SELECT author, SUM(words)
 FROM books 
 GROUP BY author
 HAVING total_words>1000000;
 
-SELECT author, AVG(words) AS avg_words
+SELECT author, AVG(words)
 FROM books 
 GROUP BY author
 HAVING avg_words>150000;
