@@ -1,3 +1,11 @@
+/*I’ve created a database of songs and artists, and I made playlists from them.
+Specifically, I made a 'Pop' playlist. 
+In preparation, I selected the name of all of the artists from the 'Pop' genre.
+To finish, I added another query that will select the title of all the songs from the 'Pop' artists.
+It uses IN on a nested subquery.*/
+
+
+
 CREATE TABLE artists (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
@@ -68,3 +76,7 @@ WHERE artist="Queen";
 SELECT name 
 FROM "artists" 
 WHERE genre="Pop";
+
+SELECT title
+FROM songs 
+WHERE artist IN (SELECT name FROM artists WHERE genre ='Pop');
