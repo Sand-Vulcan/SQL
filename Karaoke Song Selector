@@ -1,3 +1,11 @@
+/* Ever sung karaoke? It's a place where you sing songs with your friends, and it's a lot of fun. 
+I’ve created a table with songs in order to decide what to sing. 
+For the first step, I selected all of the song titles. Now maybe my friends only like singing either recent songs or truly epic songs. 
+I added another SELECT that uses OR to show the titles of the songs that have an 'epic' mood or a release date after 1990. 
+Now people can get picky at the end of the night, so I’ve added another SELECT that uses AND to show the titles of songs that are 'epic', 
+and released after 1990, and less than 4 minutes long. */
+
+
 CREATE TABLE songs (
     id INTEGER PRIMARY KEY,
     title TEXT,
