@@ -1,3 +1,8 @@
+/*I’ve created a database of a few popular authors and their books, with word counts for each book. 
+In this first step, I selected all of the authors who have written more than 1 million words, using GROUP BY and HAVING. 
+Second, I selected all of the authors that write more than an average of 150,000 words per book.*/
+
+
 CREATE TABLE books (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     author TEXT,
