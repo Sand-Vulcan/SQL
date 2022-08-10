@@ -1,3 +1,9 @@
+/*I've created a database of people and hobbies, and each row in hobbies is related to a row in persons via the person_id column. 
+I then joined the two tables with a JOIN, so that you can see each person's name next to their hobby.
+Finally, I added a WHERE query that only shows the hobbies of Bobby McBobbyFace.*/
+
+
+
 CREATE TABLE persons (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
